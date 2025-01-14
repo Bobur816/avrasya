@@ -1,0 +1,41 @@
+.btn {
+  &_primary {
+    font-family: Gilroy;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-primary);
+    }
+  }
+
+  &_line {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-primary-black);
+    }
+  }
+
+  &_line-carousel {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+}

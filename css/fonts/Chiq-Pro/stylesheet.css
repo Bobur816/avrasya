@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro.eot');
+    src: local('Chiq Pro'), local('ChiqPro'),
+        url('ChiqPro.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro.woff2') format('woff2'),
+        url('ChiqPro.woff') format('woff'),
+        url('ChiqPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-BoldItalic.eot');
+    src: local('Chiq Pro Bold Italic'), local('ChiqPro-BoldItalic'),
+        url('ChiqPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-BoldItalic.woff2') format('woff2'),
+        url('ChiqPro-BoldItalic.woff') format('woff'),
+        url('ChiqPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-BlackItalic.eot');
+    src: local('Chiq Pro Black Italic'), local('ChiqPro-BlackItalic'),
+        url('ChiqPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-BlackItalic.woff2') format('woff2'),
+        url('ChiqPro-BlackItalic.woff') format('woff'),
+        url('ChiqPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-Light.eot');
+    src: local('Chiq Pro Light'), local('ChiqPro-Light'),
+        url('ChiqPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-Light.woff2') format('woff2'),
+        url('ChiqPro-Light.woff') format('woff'),
+        url('ChiqPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-Italic.eot');
+    src: local('Chiq Pro Italic'), local('ChiqPro-Italic'),
+        url('ChiqPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-Italic.woff2') format('woff2'),
+        url('ChiqPro-Italic.woff') format('woff'),
+        url('ChiqPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-Black.eot');
+    src: local('Chiq Pro Black'), local('ChiqPro-Black'),
+        url('ChiqPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-Black.woff2') format('woff2'),
+        url('ChiqPro-Black.woff') format('woff'),
+        url('ChiqPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-Bold.eot');
+    src: local('Chiq Pro Bold'), local('ChiqPro-Bold'),
+        url('ChiqPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-Bold.woff2') format('woff2'),
+        url('ChiqPro-Bold.woff') format('woff'),
+        url('ChiqPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chiq Pro';
+    src: url('ChiqPro-LightItalic.eot');
+    src: local('Chiq Pro Light Italic'), local('ChiqPro-LightItalic'),
+        url('ChiqPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('ChiqPro-LightItalic.woff2') format('woff2'),
+        url('ChiqPro-LightItalic.woff') format('woff'),
+        url('ChiqPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
