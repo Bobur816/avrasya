@@ -120,18 +120,33 @@ body {
   font-weight: 400;
   // position: relative;
   scroll-behavior: smooth;
+  background-color: #f5f5f7;
   // background-color: #151614;
   // color: var(--color-white);
 }
 
+main {
+  position: relative;
+  width: calc(100% - 5rem);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
 .container {
-  // background-color: rgba(255, 0, 0, 0.514);
   margin: 0 auto;
-  max-width: 64rem;
-  // padding: 0 1rem;
-  width: 100%;
+  width: 88vw;
 
   @media (max-width: 768px) {
     padding: 0 1rem;
+    width: 100%;
+    max-width: 82.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 5rem;
   }
 }

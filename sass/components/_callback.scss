@@ -1,96 +1,123 @@
 .callback {
-  background-color: var(--color-secondary);
-  padding: 1rem;
-  border-radius: 1.5rem;
-  height: 18.4rem;
-  display: grid;
-  grid-template-columns: 1fr 20rem;
+  color: var(--color-primary);
+  h5 {
+    margin-bottom: 1.5rem;
+  }
 
-  &-left {
-    padding: 0.75rem 10rem 0.75rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 2.5rem; /* 166.667% */
+    margin-bottom: 1rem;
+  }
 
-    h2 {
-      color: var(--color-primary);
-      font-family: "Euclid Square";
-      font-size: 2.5rem;
-      font-weight: 500;
-      line-height: 153%; /* 76.5px */
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+
+    input {
+      padding: 0.9rem 0;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid var(--color-gray-light);
+      color: var(--color-gray-light);
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160.2%; /* 25.632px */
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus {
+        color: var(--color-primary);
+        border-color: var(--color-primary);
+        &::placeholder {
+          color: var(--color-primary);
+        }
+      }
     }
 
     p {
-      margin: 0.75rem 0 1rem 0;
+      grid-column: 1 / span 2;
+      color: var(--color-gray-light);
+      margin-top: 1.5rem;
     }
 
-    form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      row-gap: 1rem;
-      column-gap: 1.5rem;
-
-      input {
-        padding: 0.9rem 1rem;
-        border: none;
-        border-radius: 0.5rem;
-        outline: none;
-        color: var(--color-primary);
-        font-family: "Euclid Square";
-        font-size: 0.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160.2%; /* 25.632px */
-      }
-
-      button {
-        font-style: normal;
-        font-size: 0.9rem;
-        font-weight: 400;
-        line-height: normal;
-        width: fit-content;
-        padding: 0 1.75rem;
-      }
-    }
-  }
-
-  &-img {
-    height: 100%;
-    position: relative;
-    border-radius: 0.8rem;
-    overflow: hidden;
-    img {
-      @include fullImg;
+    button {
+      grid-row: 3 / span 1;
+      font-style: normal;
+      font-size: 0.9rem;
+      font-weight: 400;
+      width: fit-content;
+      margin-top: 2rem;
+      padding: 1rem 5rem;
     }
   }
 }
 
 @media (max-width: 768px) {
   .callback {
-    height: fit-content;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-
-    &-left {
-      padding: 0;
-
-      h2 {
-        font-size: 1.78rem;
-      }
-
-      form {
-        grid-template-columns: 1fr;
-
-        button {
-          padding: 0.7rem 1.75rem;
-          width: 100%;
-        }
-      }
+    color: var(--color-primary);
+    h5 {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
     }
 
-    &-img {
-      width: 100%;
-      aspect-ratio: 1.3/1;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.5rem; /* 166.667% */
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 100%;
+      row-gap: 1rem;
+      column-gap: 1.5rem;
+
+      input {
+        padding: 0.9rem 0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color-gray-light);
+        color: var(--color-gray-light);
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160.2%; /* 25.632px */
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus {
+          color: var(--color-primary);
+          border-color: var(--color-primary);
+          &::placeholder {
+            color: var(--color-primary);
+          }
+        }
+      }
+
+      p {
+        grid-column: auto;
+        // grid-row:  / span 1;
+        color: var(--color-gray-light);
+        margin-top: 1.5rem;
+      }
+
+      button {
+        grid-row: auto;
+        font-style: normal;
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: fit-content;
+        margin-top: 1rem;
+        padding: 1rem 5rem;
+      }
     }
   }
 }

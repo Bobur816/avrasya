@@ -4,36 +4,39 @@ $(window).on("load", () => {
     mobile: false,
   }).init();
   // ______________________________header__scroll_________________________________
+
+  function addScroll() {
+    $(".header").addClass("header__scrolled");
+    // $(".navigator").addClass("header__scrolled");
+  }
+
+  function removeScroll() {
+    $(".header").removeClass("header__scrolled");
+    // $(".navigator").removeClass("header__scrolled");
+  }
+
   let rootFont = parseInt($(":root").css("font-size"));
   let scroll = $(window).scrollTop();
-  scroll > rootFont * 2 ? $(".header").addClass("header__scrolled") : $(".header").removeClass("header__scrolled");
+  scroll > rootFont * 2 ? addScroll() : removeScroll();
 
   $(document).on("scroll", function () {
     let rootFont = parseInt($(":root").css("font-size"));
     let scroll = $(window).scrollTop();
-    scroll > rootFont * 2 ? $(".header").addClass("header__scrolled") : $(".header").removeClass("header__scrolled");
+    scroll > rootFont * 2 ? addScroll() : removeScroll();
   });
 
   // ______________________________.mobile__toggler________________________________
 
-  $(".mobile-nav__open").on("click", function () {
-    $(".mobile-nav").fadeIn(300);
-    setTimeout(() => {
-      $(".mobile-nav__wrapper").slideDown(300);
-    }, 300);
-    setTimeout(() => {
-      $(".mobile-nav__close").fadeIn(100);
-    }, 700);
+  function toggleNav() {
+    $(".navigator__navigation__popup").toggleClass("active");
+    $(".navigator__open-icon").toggleClass("active");
+  }
+
+  $(".navigator__open").on("click", function () {
+    toggleNav();
   });
-  $(".mobile-nav__close").on("click", function () {
-    $(".mobile-nav__close").fadeOut(100);
-    $(".mobile-nav__wrapper").slideUp(300);
-    setTimeout(() => {
-      $(".mobile-nav").fadeOut(300);
-    }, 300);
-  });
-  $(".mobile-nav__list__link").on("click", function () {
-    $(".mobile-nav").slideUp(400);
+  $(".navigator__navigation__link").on("click", function () {
+    toggleNav();
   });
 
   // ______________________________popup_________________________________
@@ -42,6 +45,9 @@ $(window).on("load", () => {
   });
   $(".call-form__open").on("click", function () {
     $(".popup-call-form").fadeIn(300);
+  });
+  $(".open__about-more").on("click", function () {
+    $(".about-more").fadeIn(300);
   });
 
   $(".popup__close").on("click", function () {
@@ -171,6 +177,8 @@ $(window).on("load", () => {
     $(".language__open").html(langEl.innerHTML);
     $(this).slideToggle(400);
   });
+
+  // ______________________________nav-togler_________________________________
 
   // ___________________file-input_____________________
   // const fileInput = document.getElementById("fileInput");

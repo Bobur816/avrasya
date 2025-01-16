@@ -1,26 +1,51 @@
 .statistic {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  margin-top: 2.5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 
   &-item {
-    // background-color: yellow;
-    // width: 25%;
+    background-color: var(--color-white);
+    height: 18rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    color: var(--color-primary);
     gap: 0;
+
+    img {
+      height: 6.5rem;
+    }
     h2 {
-      font-family: "Chiq Pro";
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: 100%;
+      font-size: 3rem;
+      font-weight: 500;
+      span {
+        font-size: 1.5rem;
+        margin-left: 0.8rem;
+      }
     }
 
     p {
-      font-size: 1rem;
-      font-weight: 400;
-      margin-top: 1rem;
+      font-size: 1;
+      font-weight: 500;
     }
+  }
+}
+
+.hoverable {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  img {
+    transition: all 0.3s;
+    @include fullImg;
+  }
+  &:hover img {
+    transform: scale(1.05);
   }
 }
 
@@ -47,18 +72,38 @@
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
     @include center;
     transition: all 0.3s;
 
     i {
       transition: all 0.3s;
       font-size: 1.2rem;
+      color: var(--color-gray);
     }
 
     &:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
       i {
-        color: var(--color-primary);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &.white {
+    a {
+      border: 1px solid var(--color-white);
+
+      i {
+        color: var(--color-white);
+      }
+
+      &:hover {
+        background-color: var(--color-white);
+        i {
+          color: var(--color-primary);
+        }
       }
     }
   }
@@ -145,24 +190,40 @@
 
 @media (max-width: 768px) {
   .statistic {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 
-    margin-top: 1rem;
     &-item {
-      // background-color: yellow;
-      width: 50%;
+      background-color: var(--color-white);
+      height: 18rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      color: var(--color-primary);
+      gap: 0;
+
+      img {
+        height: 6.5rem;
+      }
       h2 {
-        font-family: "Chiq Pro";
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 100%;
+        font-size: 3rem;
+        font-weight: 500;
+        span {
+          font-size: 1.5rem;
+          margin-left: 0.8rem;
+        }
       }
 
       p {
-        font-size: 0.8rem;
-        font-weight: 400;
+        font-size: 1;
+        font-weight: 500;
       }
     }
   }

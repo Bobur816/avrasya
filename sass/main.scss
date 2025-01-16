@@ -7,15 +7,16 @@
 
 @import "components/button";
 @import "components/common";
-@import "components/mobile-nav";
+// @import "components/mobile-nav";
 @import "components/popup";
 @import "components/language";
 @import "components/carousel";
-@import "components/service-card";
-@import "components/partners-grid";
-@import "components/pagination";
-@import "components/order-form";
+// @import "components/service-card";
+// @import "components/partners-grid";
+// @import "components/pagination";
+// @import "components/order-form";
 @import "components/callback";
+@import "components/carousel-control";
 
 // @import "components/modal";
 // @import "components/vacancy-card";
@@ -27,13 +28,14 @@
 // @import "components/product-card";
 // @import "components/more";
 
-@import "layout/header";
+@import "layout/navigator";
 @import "layout/footer";
+@import "layout/header";
 
 @import "pages/home";
-@import "pages/about";
-@import "pages/projects";
-@import "pages/news";
-@import "pages/services-page";
-@import "pages/single";
-@import "pages/contacts";
+// @import "pages/about";
+// @import "pages/projects";
+// @import "pages/news";
+// @import "pages/services-page";
+// @import "pages/single";
+// @import "pages/contacts";
